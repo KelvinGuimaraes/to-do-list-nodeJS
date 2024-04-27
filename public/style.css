@@ -16,7 +16,7 @@ body {
 /* topo da pagina ------------------------------------------------------------------------------------- */
 
 header {
-    background-color: #000080;
+    background: linear-gradient(rgb(52, 41, 253), rgb(55, 34, 211), rgb(54, 27, 171), rgb(50, 20, 133), rgb(44, 14, 96));
     padding: 3rem;
     margin: 2rem;
     text-align: center;
@@ -124,7 +124,7 @@ a.btnUpdate{
 }
 
 a.btnUpdate:hover{
-    background-color: blue;
+    background: linear-gradient(rgb(52, 41, 253), rgb(55, 34, 211), rgb(54, 27, 171), rgb(50, 20, 133), rgb(44, 14, 96));
     color: #fff;
     border-radius: 15px;
 }
@@ -137,7 +137,7 @@ a.btnDelete{
 }
 
 a.btnDelete:hover{
-    background-color:darkred;
+    background: linear-gradient(rgb(255, 0, 0), rgb(216, 0, 0), rgb(149, 0, 0), rgb(88, 0, 0), rgb(55, 0, 0));
     color: #fff;
     border-radius: 15px;
 }
@@ -187,7 +187,7 @@ div#card a#close{
 }
 
 div#card a#close:hover{
-    background-color: darkred;
+    background: linear-gradient(rgb(255, 0, 0), rgb(216, 0, 0), rgb(149, 0, 0), rgb(88, 0, 0), rgb(55, 0, 0));
     border-radius: 5rem ;
     padding: 0 .3rem;
 }
@@ -234,7 +234,7 @@ div#btns a#btnNot {
 }
 
 div#btns a#btnNot:hover {
-    background-color: darkred;
+    background: linear-gradient(rgb(255, 0, 0), rgb(216, 0, 0), rgb(149, 0, 0), rgb(88, 0, 0), rgb(55, 0, 0));
     color: #fff;
 }
 
@@ -245,6 +245,6 @@ div#btns a#btnYes {
 }
 
 div#btns a#btnYes:hover {
-    background-color: #00aa2a;
-    color: #fff;
+    background: linear-gradient(rgb(26, 255, 0), rgb(56, 195, 0), rgb(54, 129, 0), rgb(4, 116, 0), rgb(12, 69, 0));
+    color:#fff;
 }
