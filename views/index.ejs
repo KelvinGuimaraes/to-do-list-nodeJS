@@ -3,9 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/style.css" />
     <link
       rel="stylesheet"
@@ -29,7 +27,12 @@
       <h1>TO DO LIST</h1>
 
       <form action="/create" method="post">
-        <input type="text" name="task" id="task" placeholder="Insira uma tarefa"/>
+        <input
+          type="text"
+          name="task"
+          id="task"
+          placeholder="Insira uma tarefa"
+        />
         <button id="addButton" type="submit">Adicionar</button>
       </form>
 
@@ -40,16 +43,18 @@
         <input type="text" name="task" id="task" value="<%= task.task %>" />
         <button id="updateButton" type="submit">Atualiazr</button>
       </form>
+      
       <% } %>
-
     </header>
 
     <section id="tasks">
       <ul>
         <% tasksList.forEach((task)=> { %>
-        <li>
+        <li class="check-<%= task.check %>">
           <div>
-            <a href=""> <%= task.task %> </a>
+            <a href="/check/<%= task._id %>" class="check-<%= task.check %>">
+              <%= task.task %>
+            </a>
             <span>
               criado em <%= task.date.toLocaleDateString('pt-BR') %>
             </span>
@@ -63,10 +68,8 @@
               ><i class="bi bi-trash3"></i
             ></a>
           </div>
-
         </li>
         <% }) %>
-
       </ul>
     </section>
 
