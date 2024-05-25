@@ -18,7 +18,7 @@ Este é um simples aplicativo de lista de tarefas (To-Do List) desenvolvido em N
 
 `git clone https://github.com/KelvinGuimaraes/to-do-list-nodeJS.git`
 
-3. Instale as dependências do projeto: `npm install express` e `npm install nodemon`
+3. Instale as dependências do projeto: `npm install express`; `npm install nodemon`; `npm i dotenv -D`
 
 4. Inicie o servidor: `npm start` ou `npm run dev`
 
